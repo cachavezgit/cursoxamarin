@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HelloXamarin.Views.ThirdPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+            <Label x:Name="Numero1" Text="Numero 1"/>
+            <Entry x:Name="EntryNumero1"/>
+            <Label x:Name="Numero2" Text="Numero 2"/>
+            <Entry x:Name="EntryNumero2"/>
+            <Button x:Name="Multiplicar" Text="Multiplicacion"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

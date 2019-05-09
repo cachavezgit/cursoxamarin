@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:HelloXamarin" x:Class="HelloXamarin.MainPage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+        <Label x:Name="LabelWelcome"  Text="Welcome to Xamarin.Forms!!!!!!!!"  />
+        <Button x:Name="Button2ndPage" Text="Go to 2nd Page" Command="{Binding BtnCommand}" />
+        <Button x:Name="Saludo" Text="Saludo" Command="{Binding SaludoCommand}"/>
+        <Button x:Name="Button3rdPage" Text="Go to 3rdPage" Command="{Binding Btn3Command}"/>
+    </StackLayout>
+</ContentPage>
