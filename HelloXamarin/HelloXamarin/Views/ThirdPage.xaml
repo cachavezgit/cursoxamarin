@@ -6,7 +6,7 @@
             <Entry x:Name="EntryNumero1"/>
             <Label x:Name="Numero2" Text="Numero 2"/>
             <Entry x:Name="EntryNumero2"/>
-            <Button x:Name="Multiplicar" Text="Multiplicacion"/>
+            <Button x:Name="Multiplicar" Text="Multiplicacion" Command="{Binding BtnCommandMultiplicar}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
