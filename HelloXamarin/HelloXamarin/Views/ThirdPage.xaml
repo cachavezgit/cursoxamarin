@@ -3,10 +3,21 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <Label x:Name="Numero1" Text="Numero 1"/>
-            <Entry x:Name="EntryNumero1"/>
+            <Entry x:Name="EntryNumero1" Text="{Binding Datos.Numero1}"/>
             <Label x:Name="Numero2" Text="Numero 2"/>
-            <Entry x:Name="EntryNumero2"/>
+            <Entry x:Name="EntryNumero2" Text="{Binding Datos.Numero2}"/>
             <Button x:Name="Multiplicar" Text="Multiplicacion" Command="{Binding BtnCommandMultiplicar}"/>
+            <ListView x:Name="ListaPersonas" ItemsSource="{Binding Personas}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Nombre}"/>
+                        </ViewCell>
+                    </DataTemplate>    
+                </ListView.ItemTemplate>
+            </ListView>
+                
+          
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
