@@ -11,7 +11,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Label Text="{Binding Nombre}"/>
+                            <StackLayout>
+                                <Label Text="{Binding Nombre}"/>
+                                <Label Text="{Binding Apellidos}"/>
+                            </StackLayout>
                         </ViewCell>
                     </DataTemplate>    
                 </ListView.ItemTemplate>
